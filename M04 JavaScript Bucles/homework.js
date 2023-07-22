@@ -133,8 +133,11 @@ function fizzBuzz(num) {
       return "fizz";
    }else if (num % 5 === 0){
       return "buzz";
+   }else{
+      return false
    }
 }
+
 
 function operadoresLogicos(num1, num2, num3) {
    // La función recibe tres números distintos.

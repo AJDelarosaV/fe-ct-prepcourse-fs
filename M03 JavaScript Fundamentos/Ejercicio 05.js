@@ -74,7 +74,7 @@ function esVocal(letra) {
    if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u" || letra === "A" || letra === "E" || letra === "I" || letra === "O" || letra === "U"){
       return "Es vocal";
    }else{
-      return "Datos incorrectos"
+      return "Dato incorrecto"
    }
 }
 

@@ -140,16 +140,16 @@ function diaDeLaSemana(numeroDeDia) {
          return "Es fin de semana";
          
       case 2:
-         return "Es dia Laboral";
+         return "Es dia laboral";
          
       case 3:
-         return "Es dia Laboral";
+         return "Es dia laboral";
          
       case 4:
-         return "Es dia Laboral";
+         return "Es dia laboral";
          
       case 5:
-         return "Es dia Laboral";
+         return "Es dia laboral";
 
       case 6:
          return "Es fin de semana";
@@ -196,11 +196,11 @@ function mesesDelAño(array) {
    var enero = array.indexOf("Enero",0);
    var marzo = array.indexOf("Marzo", 0);
    var noviembre = array.indexOf("Noviembre", 0);
-   if (enero != -1) newArray.push("Enero");
    if (marzo != -1) newArray.push("Marzo");
    if (noviembre != -1) newArray.push("Noviembre");
+   if (enero != -1) newArray.push("Enero");
 
-   if (enero == -1 || marzo == -1 || noviembre == -1){
+   if (marzo == -1 || enero == -1 ||  noviembre == -1){
       return "No se encontraron los meses pedidos"
    }else{
       return newArray
@@ -276,13 +276,13 @@ function continueStatement(num) {
    // se continua con la siguiente iteración.
    // [PISTA]: utiliza el statement 'continue'.
    // Tu código:
-   var i = 0; 
+   var i = 0, iter = 0; 
    var resultado = 0;
    const arr = [];
-   while(i < 10){      
-      i+=1
+   while(i < 10-iter){      
+      i+=1;
       if (i == 5 || resultado == 5) {
-         continue;
+         iter+=1;
       }
       resultado = num + i * 2;
       arr.push(resultado);
