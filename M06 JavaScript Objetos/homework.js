@@ -16,10 +16,6 @@ function crearGato(nombre, edad) {
    return gato;
 }
 
-console.log(crearGato('angel', 25));
-console.log(crearGato('angel', 25).meow())
-console.log(crearGato('angel', 25).nombre)
-
 function nuevoUsuario(nombre, email, password) {
    // Debes crear un nuevo objeto.
    // Este debe tener las propiedades: "nombre", "email" y "password" con sus respectivos valores.
@@ -32,9 +28,6 @@ function nuevoUsuario(nombre, email, password) {
    };
    return usuario;
 }
-console.log(nuevoUsuario('angel', 'dddd@',12345));
-console.log(nuevoUsuario('angel', 'dddd@',12345).email);
-console.log(nuevoUsuario('angel', 'dddd@',12345).nombre)
 
 function agregarPropiedad(objeto, propiedad) {
    // Recibirás un objeto por parámetro.

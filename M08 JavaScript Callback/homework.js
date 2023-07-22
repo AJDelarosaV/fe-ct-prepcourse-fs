@@ -77,15 +77,16 @@ function filter(arrayOfStrings) {
    // Luego retorna un nuevo arreglo con estos elementos.
    // Tu código:
    var nums = [];
-   for(let i= 0; i < array.length; i ++){
-      if (array[i][0]=== "a"){
-         nums.push(array[i]);
+   for(let i= 0; i < arrayOfStrings.length; i ++){
+      if (arrayOfStrings[i][0]=== "a"){
+         nums.push(arrayOfStrings[i]);
       };
       
      
    };
    return nums;
 }
+
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
